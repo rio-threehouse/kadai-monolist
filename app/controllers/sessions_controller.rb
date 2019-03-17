@@ -17,7 +17,7 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil
-    flash[:succerr] = 'ログアウトしました'
+    flash[:success] = 'ログアウトしました'
     redirect_to root_url
   end
   
